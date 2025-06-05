@@ -1,25 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './Header'
-import Banner from './Banner'
-import Courses from './Courses'
-
+import Counter from './Counter'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-  
-     <div className=''> 
-      <Header></Header>
-      <Banner></Banner>
-      <Courses></Courses>
-       
-         
-     </div>
-    
+    <div className='p-5 border border-success'>
+      <h1>Welcome to ReactJS App Development base practice</h1>
+      <h2>Vishnu</h2>
+      <Counter i={10} iv={5} dv={13}></Counter>
+
+    </div>
   )
 }
 
 export default App
+
