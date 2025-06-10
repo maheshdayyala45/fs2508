@@ -1,29 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Countries from './countries'
+import Todolist from './Todolist'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <div className='p-5'> 
-      <h1>welcome to react js app development</h1>
-      <button className='btn btn-danger'>click me!!</button>
-      <button className='btn btn-success'>click me!!</button>
-      <button className='btn btn-info'>click me!!</button>
-      <button className='btn btn-primary'>click me!!</button>
-      <button className='btn btn-secondary'>click me!!</button>
-      <button className='btn btn-dark'>click me!!</button>
-      <button className='btn btn-light'>click me!!</button>
-      <button className='btn btn-success text-subtle'>click me!!</button>
-      <button className='border d-inline-block p-2 rounded bg-success-subtle text-success'>click me!!</button>
-       
-         
-     </div>
-    </>
+
+      <div className='m-2 p-2 border border-success'>
+        <h1>Welcome to ReactJS App Development base practice</h1>
+        {/* <Countries></Countries> */}
+        <Todolist></Todolist>
+        {/* <Todolist></Todolist> */}
+      </div>
   )
 }
 
 export default App
+
+// state // array //modal
+// action // adding data to state//control
+// ui // showing the updated data//view
