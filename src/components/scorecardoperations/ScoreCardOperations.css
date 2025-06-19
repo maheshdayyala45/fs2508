@@ -1,0 +1,10 @@
+.score-button{
+    background-color: var(--secondarycolor);
+    color: whitesmoke;
+    padding: 20px 40px;
+    margin: 10px;
+    font-size: 30px;
+}
+ .score-button:hover{
+    background-color: rgba(0, 0, 0, 0.511);
+ }

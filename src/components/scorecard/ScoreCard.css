@@ -1,0 +1,10 @@
+.scoreboard-container{
+    height: 200px;
+    background-color: var(--primarycolor);
+   
+    
+    
+}
+.score{
+    font-size: 60px;
+}
