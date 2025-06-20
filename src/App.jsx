@@ -8,12 +8,18 @@ function App(){
    let[score,scoreFun]=useState(10);
    console.log("app component rendering",score)
    
-  function increment(){
+  function increment(value){
     console.log("iam incrementing")
-    score=score+1
+    score=score+value
     scoreFun(score)
     console.log("ubdated score",score)
   }
+  // function incrementBy5(){
+  //   console.log("iam incrementing5")
+  //   score=score+5;
+  //   scoreFun=(score)
+  //   console.log("ubdating",score)
+  // }
 
   return (
   <div>
@@ -23,6 +29,7 @@ function App(){
     <div className="flex-center">
     <button className="score-button" onClick={increment}>+1</button>
     </div> */}
+        {/* <ScoreCardOperations incrementscore5={incrementBy5}/> */}
     <ScoreCard score={score}/>
     <ScoreCardOperations incrementscore={increment}/>
   </div>
