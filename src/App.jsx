@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Dashboard from './pages/Dashboard';
+import Loginform from './pages/Loginform';
 
-import Counter from './features/counter/Counter'
-import Products from './features/products/Products'
+
 
 function App() {
- 
-return(
-  <div className='m-5 p-5 border border-5 border-success'>
-    <h1>welcome to react redux toolkit</h1>
-      <Counter></Counter>
-      <Products></Products>
-  </div>
-)
-  
+
+
+  return (
+    <div>
+     <Loginform></Loginform>
+     <Dashboard></Dashboard>
+     </div>
+  )
 }
 
 export default App

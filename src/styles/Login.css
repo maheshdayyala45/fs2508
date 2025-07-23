@@ -1,8 +1,12 @@
+
 body {
   margin: 0;
   padding: 0;
-  background-color: lightpink;
+
   font-family: 'Segoe UI', sans-serif;
+}
+.login-container {
+  background-color: #ffd6dd;
 }
 
 /* Flex container to center the card */
@@ -86,4 +90,3 @@ form button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
