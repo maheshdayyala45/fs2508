@@ -1,2 +1,46 @@
+/* Basic Product List Container */
+.product-list-basic {
+  display: flex; /* Use flexbox for a simple row layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 15px; /* Space between product items */
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  justify-content: center; /* Center the items if there's extra space */
+}
 
+/* Basic Individual Product Item */
+.product-item-basic {
+  border: 1px solid #ccc; /* Simple, light grey border */
+  padding: 10px; /* Padding inside the item */
+  border-radius: 5px; /* Slightly rounded corners */
+  width: 180px; /* Fixed width for each item (adjust as needed) */
+  text-align: center; /* Center align text and image */
+  display: flex; /* Use flexbox for vertical stacking */
+  flex-direction: column;
+  align-items: center; /* Center items horizontally within the flex column */
+}
+
+/* Basic Product Image */
+.product-image-basic {
+  width: 80px; /* Fixed width for consistency */
+  height: 80px; /* Fixed height for consistency */
+  object-fit: contain; /* Ensure image is fully visible */
+  margin-bottom: 8px; /* Space below the image */
+}
+
+/* Basic Product Title */
+.product-item-basic h4 {
+  font-size: 1rem; /* Standard font size */
+  margin: 0 0 5px 0; /* Minimal margin */
+  color: #333; /* Dark grey for readability */
+}
+
+/* Basic Product Price */
+.product-price-basic {
+  font-size: 1.1rem; /* Slightly larger price */
+  font-weight: bold; /* Bold price */
+  color: #000; /* Black for simplicity */
+  margin-top: auto; /* Pushes the price to the bottom if content varies */
+}
 
