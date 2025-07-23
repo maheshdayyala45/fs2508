@@ -4,26 +4,25 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <div className='p-5'> 
-      <h1>welcome to react js app development</h1>
-      <button className='btn btn-danger'>click me!!</button>
-      <button className='btn btn-success'>click me!!</button>
-      <button className='btn btn-info'>click me!!</button>
-      <button className='btn btn-primary'>click me!!</button>
-      <button className='btn btn-secondary'>click me!!</button>
-      <button className='btn btn-dark'>click me!!</button>
-      <button className='btn btn-light'>click me!!</button>
-      <button className='btn btn-success text-subtle'>click me!!</button>
-      <button className='border d-inline-block p-2 rounded bg-success-subtle text-success'>click me!!</button>
-       
-         
-     </div>
-    </>
-  )
+    <div className="login-container">
+      <div className="login-card">
+        <h1 className="title"><span className="blue">Edi</span><span className="pink">fy</span></h1>
+        <p className="subtitle">Login</p>
+
+        <input type="text" placeholder="User Name" />
+        <input type="password" placeholder="Password" />
+
+        <button className="login-button">Login</button>
+
+        <label className="remember">
+          <input type="checkbox" /> Remember Me
+        </label>
+
+        <p className="footer">Not a Learner? <button className="join-now">Join Now</button></p>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
