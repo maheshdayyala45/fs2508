@@ -1,6 +1,5 @@
 import './App.css'
-import Dashboard from './pages/Dashboard';
-import Loginform from './pages/Loginform';
+
 
 const data =[
   
@@ -289,18 +288,28 @@ const data =[
 const App = () => {
   return (
     <div className='post-container'>
-      <Profile/>
+      {
+        data.map((eachobj) => {
+          const {id,thumbnailUrl, title, url}=eachobj;
+          return  <Profile/> 
+          // key={id}
+          id={id}
+          thumbnailUrl={thumbnailUrl}
+          url={url}
+        })
+      }
+     
 
     </div>
   )
 }
-
-const Profile = () => {
+const Profile = (props) => {
+  const{title,thumbnailUrl,url}=props;
   return (
     <div className='profile-card'>
-      <img src="https://via.placeholder.com/150/771796" alt="some thing" />
-      <h2>hello everyone</h2>
-      <a href="https://via.placeholder.com/600/92c952" className='button'>details</a>
+      <img src= {thumbnailUrl}alt="" />
+      <h2 className='title'>{title}</h2>
+      <a href={url} className='button'>details</a>
      </div>
   )
 }
